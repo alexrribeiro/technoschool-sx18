@@ -89,6 +89,48 @@
                             <label for="tg" class="form-check-label">Telegram</label>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="form-group col-md-4">
+                            <label for="selUnidade">Sua Unidade (cidade)</label>
+                            <select id="selUnidade" class="form-control">
+                                <option value="Geral">Geral</option>
+                                <option value="Guaratinguetá">Guaratinguetá</option>
+                                <option value="Pindamonhangaba">Pindamonhangaba</option>
+                                <option value="Taubaté">Taubaté</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-8">
+                            <div>
+                                <label>Motivo do seu contato</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" name="motivo" id="inform" class="form-check-input" value="informacoes">
+                                <label for="inform" class="form-check-label">Informações/Dúvidas</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" name="motivo" id="sugest" class="form-check-input" value="sugestoes">
+                                <label for="sugest" class="form-check-label">Sugestões</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" name="motivo" id="elogio" class="form-check-input" value="elogios">
+                                <label for="elogio" class="form-check-label">Elogios</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" name="motivo" id="reclam" class="form-check-input" value="reclamacoes">
+                                <label for="reclam" class="form-check-label">Reclamações</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" name="motivo" id="outros" class="form-check-input" value="outros">
+                                <label for="outros" class="form-check-label">Outros</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="txaMensagem">Sua mensagem:</label>
+                        <textarea id="txaMensagem" rows="5" class="form-control" style="resize: none;" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-info">Enviar</button>
+                    <button type="reset" class="btn btn-secondary">Limpar</button>
                 </form>
             </div>
         </div>
